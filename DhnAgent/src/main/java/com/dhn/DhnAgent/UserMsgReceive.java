@@ -49,6 +49,10 @@ public class UserMsgReceive {
 			try {
 				userCon = userSource.getConnection();
 				dhnCon = dhnSource.getConnection();
+
+SELECT SUBSTR(XMLAgg(XMLElement(x, ',', rt.transaction_id)).Extract('//text()'), 2)
+  FROM rcv_transactions rt
+ where rt.po_header_id = '404987';
 				
 				String userQuery = "select (msg_id div 10) as part, group_concat(dhn_msg_id) as msg_ids from cb_dhn_msg where msg_st = '2' and dhn_msg_id is not null group by (msg_id div 10)";
 				Statement stm = userCon.createStatement();
