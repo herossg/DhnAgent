@@ -40,6 +40,27 @@ public class OracleCheckLogTable {
 			
 			if(!rs.next()) {
 				Statement CRTTable = userCon.createStatement();
+
+create table cb_dhn_broadcast_201905
+(
+  msg_id       number,
+  msg_gb       varchar2(5),
+  bc_msg_id    number,
+  bc_snd_st    varchar2(1),
+  bc_snd_phn   varchar2(20),
+  bc_rcv_phn   varchar2(20),
+  bc_rslt_no   varchar2(5),
+  bc_rslt_text varchar2(255),
+  bc_snd_dttm  date,
+  bc_rcv_dttm  date
+)
+;
+-- Create/Recreate indexes 
+create index msg_id_2019 on cb_dhn_broadcast_201905 (msg_id);
+create index bc_snd_st_2019 on cb_dhn_broadcast_201905 (bc_snd_st, bc_snd_dttm);
+alter table cb_dhn_broadcast_201905
+  add constraint bc_msg_id primary key (BC_MSG_ID);
+				
 				String CreateSTR =  "CREATE TABLE `cb_dhn_broadcast_"+ monthStr +"` (" + 
 									"		`MSG_ID` INT(11) NOT NULL," + 
 									"		`MSG_GB` VARCHAR(5) NOT NULL," + 
@@ -66,6 +87,30 @@ public class OracleCheckLogTable {
 			
 			if(!rs2.next()) {
 				Statement CRTTable2 = userCon.createStatement();
+				
+create table cb_dhn_msg
+(
+  msg_id       number,
+  msg_gb       varchar2(3),
+  msg_st       varchar2(1),
+  msg_ins_dttm date,
+  msg_req_dttm date,
+  msg_snd_phn  varchar2(20),
+  msg_rcv_phn  varchar2(20),
+  subject      varchar2(50),
+  text         varchar2(3000),
+  file_path1   varchar2(255),
+  file_path2   varchar2(255),
+  file_path3   varchar2(255),
+  cb_msg_id    varchar2(20),
+  dhn_msg_id   number,
+  msg_cnt      number
+)
+;
+create index msg_st on XXPO.cb_dhn_msg (msg_st, dhn_msg_id);
+alter table cb_dhn_msg
+  add constraint msg_id primary key (MSG_ID);
+				
 				String CreateSTR =  "			CREATE TABLE `cb_dhn_msg` (" + 
 									"					`MSG_ID` INT(11) NOT NULL AUTO_INCREMENT," + 
 									"					`MSG_GB` CHAR(3) NOT NULL," + 
