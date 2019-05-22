@@ -1,0 +1,50 @@
+[2019-05-22 21:51:13:498][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 13072 (E:\Git\DhnAgent\DhnAgent\bin\main started by WE in E:\Git\DhnAgent\DhnAgent)
+[2019-05-22 21:51:13:502][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
+[2019-05-22 21:51:14:834][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-05-22 21:51:14:857][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+[2019-05-22 21:51:14:1167][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2019-05-22 21:51:14:1431][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2019-05-22 21:51:14:1487][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-05-22 21:51:14:1556][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+[2019-05-22 21:51:14:1557][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[2019-05-22 21:51:15:1720][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-05-22 21:51:15:1924][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-05-22 21:51:19:6321][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - PWD : E:\Git\DhnAgent\DhnAgent/conf/dbconf.properties
+[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - URL  : jdbc:mysql://222.122.203.68:3306/dhn?characterEncoding=UTF-8&serverTimezone=UTC
+[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - User : root
+[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - PW   : sjk4556!!22
+[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - User ID         : dhn
+[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - USer Password   : dhn7985!!22qa
+[2019-05-22 21:51:20:6863][main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+[2019-05-22 21:51:20:6960][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Started DhnAgentApplication in 6.711 seconds (JVM running for 7.124)
+[2019-05-22 21:51:21:7961][taskScheduler-4] INFO  com.dhn.DhnAgent.CronTable - 시작 시 Log Table 확인 
+[2019-05-22 21:51:21:7974][taskScheduler-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-22 21:51:21:8069][taskScheduler-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[2019-05-22 21:53:53:394][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 7312 (E:\Git\DhnAgent\DhnAgent\bin\main started by WE in E:\Git\DhnAgent\DhnAgent)
+[2019-05-22 21:53:53:395][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
+[2019-05-22 21:53:54:672][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-05-22 21:53:54:687][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[2019-05-22 21:53:54:976][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2019-05-22 21:53:54:1190][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2019-05-22 21:53:54:1226][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-05-22 21:53:54:1268][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+[2019-05-22 21:53:54:1269][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[2019-05-22 21:53:54:1367][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-05-22 21:53:55:1523][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-05-22 21:53:59:5689][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - PWD : E:\Git\DhnAgent\DhnAgent/conf/dbconf.properties
+[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - URL  : jdbc:mysql://222.122.203.68:3306/dhn?characterEncoding=UTF-8&serverTimezone=UTC
+[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - User : root
+[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - PW   : sjk4556!!22
+[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - User ID         : dhn
+[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - USer Password   : dhn7985!!22qa
+[2019-05-22 21:53:59:6122][main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+[2019-05-22 21:53:59:6210][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Started DhnAgentApplication in 6.003 seconds (JVM running for 6.362)
+[2019-05-22 21:54:00:7210][taskScheduler-4] INFO  com.dhn.DhnAgent.CronTable - 시작 시 Log Table 확인 
+[2019-05-22 21:54:00:7226][taskScheduler-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-22 21:54:00:7319][taskScheduler-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.

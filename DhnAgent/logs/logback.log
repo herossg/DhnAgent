@@ -1,0 +1,23 @@
+[2019-04-20 16:09:21:354][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 10464 (E:\Git\DhnAgent\DhnAgent\bin\main started by WE in E:\Git\DhnAgent\DhnAgent)
+[2019-04-20 16:09:21:356][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
+[2019-04-20 16:09:21:583][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-04-20 16:09:21:593][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+[2019-04-20 16:09:22:904][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-04-20 16:09:22:949][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+[2019-04-20 16:09:22:950][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[2019-04-20 16:09:22:1045][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-04-20 16:09:22:1284][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[2019-04-20 16:09:33:12177][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-04-20 16:09:33:12217][main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+[2019-04-20 16:09:33:12375][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Started DhnAgentApplication in 12.195 seconds (JVM running for 12.517)
+[2019-04-20 16:09:34:13482][taskScheduler-1] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
+[2019-04-20 16:09:39:18548][taskScheduler-1] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
+[2019-04-20 16:09:44:23629][taskScheduler-2] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
+[2019-04-20 16:09:49:28697][taskScheduler-1] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
+[2019-04-20 16:09:54:33770][taskScheduler-3] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
+[2019-04-20 16:10:00:38847][taskScheduler-2] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
+[2019-04-20 16:10:05:43920][taskScheduler-4] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
+[2019-04-20 16:10:10:48998][taskScheduler-1] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
+[2019-04-20 16:10:15:54068][taskScheduler-5] INFO  com.dhn.DhnAgent.CronTable - 일하자 : 11.00
