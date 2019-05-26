@@ -42,7 +42,16 @@ public class UserMsgSent {
 				userCon = userSource.getConnection();
 				dhnCon = dhnSource.getConnection();
 				
-				String userQuery = "select * from cb_dhn_msg where msg_st = 0 and dhn_msg_id is null limit 0, 50";
+				String userQuery = "";
+				
+				if(DbInfo.DBMS.toUpperCase().equals("MYSQL") || DbInfo.DBMS.toUpperCase().equals("MARIADB")) {
+					userQuery = "select * from " + DbInfo.MSG_TABLE + " where msg_st = 0 and dhn_msg_id is null limit 0, 50";
+				}
+				
+				if(DbInfo.DBMS.toUpperCase().equals("ORACLE")) {
+					userQuery = "select * from " + DbInfo.MSG_TABLE + " where msg_st = 0 and dhn_msg_id is null and rownum <= 50";
+				}
+				
 				Statement stm = userCon.createStatement();
 				ResultSet rs = stm.executeQuery(userQuery);
 
@@ -70,7 +79,7 @@ public class UserMsgSent {
 															" , ?" + 
 															" , ?)";
 				
-				String updateQuery = "update cb_dhn_msg set dhn_msg_id = ?, msg_st = 2, msg_cnt = ? where msg_id = ?";
+				String updateQuery = "update " + DbInfo.MSG_TABLE + " set dhn_msg_id = ?, msg_st = 2, msg_cnt = ? where msg_id = ?";
 				
 				while(rs.next()) {
 					PreparedStatement dhnIns = dhnCon.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);

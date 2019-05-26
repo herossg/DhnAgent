@@ -41,7 +41,7 @@ public class UserMsgReceive {
 			int totalreceive = 0;
 
 			String dhnTblName = "cb_grs_broadcast_" + monthStr;
-			String userTblName = "cb_dhn_broadcast_" + monthStr;
+			String userTblName = DbInfo.BROADCAST_TABLE + monthStr;
 			
 			Connection userCon = null;
 			Connection dhnCon = null;
@@ -49,12 +49,16 @@ public class UserMsgReceive {
 			try {
 				userCon = userSource.getConnection();
 				dhnCon = dhnSource.getConnection();
-
-SELECT SUBSTR(XMLAgg(XMLElement(x, ',', rt.transaction_id)).Extract('//text()'), 2)
-  FROM rcv_transactions rt
- where rt.po_header_id = '404987';
+								
+				String userQuery = "";
 				
-				String userQuery = "select (msg_id div 10) as part, group_concat(dhn_msg_id) as msg_ids from cb_dhn_msg where msg_st = '2' and dhn_msg_id is not null group by (msg_id div 10)";
+				if(DbInfo.DBMS.toUpperCase().equals("MYSQL") || DbInfo.DBMS.toUpperCase().equals("MARIADB")) {
+					userQuery = "select (msg_id div 10) as part, group_concat(dhn_msg_id) as msg_ids from " + DbInfo.MSG_TABLE + " where msg_st = '2' and dhn_msg_id is not null group by (msg_id div 10)";
+				}
+				
+				if(DbInfo.DBMS.toUpperCase().equals("ORACLE")) {
+					userQuery = "select (msg_id / 10) as part, SUBSTR(XMLAgg(XMLElement(x, ',', dhn_msg_id)).Extract('//text()'), 2) as msg_ids from " + DbInfo.MSG_TABLE + " where msg_st = '2' and dhn_msg_id is not null group by (msg_id / 10)";
+				}
 				Statement stm = userCon.createStatement();
 				
 				ResultSet rs = stm.executeQuery(userQuery);

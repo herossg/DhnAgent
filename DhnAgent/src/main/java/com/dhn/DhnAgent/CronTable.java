@@ -32,7 +32,10 @@ public class CronTable {
 	
 	@Autowired
 	CheckLogTable checkLogTagle;
-	
+
+	@Autowired
+	OracleCheckLogTable oracleCheckLogTagle;
+
 	boolean isRunning = false;
 	static UserInfo userInfo = new UserInfo();
 	Logger log = LoggerFactory.getLogger(getClass());
@@ -62,7 +65,7 @@ public class CronTable {
 		{
 			log.error("사용자 정보가 존재 하지 않습니다.");
 		} else {
-			if(DataSourceProperties.isStart)
+			if(DataSourceProperties.isStart) 
 				userMsgReceive.ReceiveMsg(monthStr);
 		}
 	}
@@ -88,8 +91,16 @@ public class CronTable {
 		{
 			log.error("사용자 정보가 존재 하지 않습니다.");
 		} else {
-			if(DataSourceProperties.isStart)
-				checkLogTagle.CreateLogTable();
+			if(DataSourceProperties.isStart) {
+				if(DbInfo.DBMS.toUpperCase().equals("MYSQL") || DbInfo.DBMS.toUpperCase().equals("MARIADB")) {
+					checkLogTagle.CreateLogTable();
+				}
+
+				if(DbInfo.DBMS.toUpperCase().equals("ORACLE")) {
+					oracleCheckLogTagle.OracleCreateLogTable();
+				}
+			}
+				
 		}
 	}
 	
@@ -105,7 +116,13 @@ public class CronTable {
 					Logger log = LoggerFactory.getLogger(getClass());
 					log.info("시작 시 Log Table 확인 ");
 					
-					checkLogTagle.CreateLogTable();
+					if(DbInfo.DBMS.toUpperCase().equals("MYSQL") || DbInfo.DBMS.toUpperCase().equals("MARIADB")) {
+						checkLogTagle.CreateLogTable();
+					}
+
+					if(DbInfo.DBMS.toUpperCase().equals("ORACLE")) {
+						oracleCheckLogTagle.OracleCreateLogTable();
+					}
 					isRunning = true;
 				}
 			}

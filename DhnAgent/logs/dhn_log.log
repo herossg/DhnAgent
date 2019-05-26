@@ -1,50 +1,326 @@
-[2019-05-22 21:51:13:498][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 13072 (E:\Git\DhnAgent\DhnAgent\bin\main started by WE in E:\Git\DhnAgent\DhnAgent)
-[2019-05-22 21:51:13:502][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
-[2019-05-22 21:51:14:834][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-[2019-05-22 21:51:14:857][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
-[2019-05-22 21:51:14:1167][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2019-05-22 21:51:14:1431][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2019-05-22 21:51:14:1487][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+[2019-05-23 19:20:14:423][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 6400 (C:\Users\WE\git\DhnAgent\DhnAgent\bin\main started by WE in C:\Users\WE\git\DhnAgent\DhnAgent)
+[2019-05-23 19:20:14:424][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
+[2019-05-23 19:20:14:727][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-05-23 19:20:14:750][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+[2019-05-23 19:20:15:1046][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2019-05-23 19:20:15:1300][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2019-05-23 19:20:15:1340][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-[2019-05-22 21:51:14:1556][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
-[2019-05-22 21:51:14:1557][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-[2019-05-22 21:51:15:1720][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-[2019-05-22 21:51:15:1924][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-[2019-05-22 21:51:19:6321][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - PWD : E:\Git\DhnAgent\DhnAgent/conf/dbconf.properties
-[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - URL  : jdbc:mysql://222.122.203.68:3306/dhn?characterEncoding=UTF-8&serverTimezone=UTC
-[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - User : root
-[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - PW   : sjk4556!!22
-[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - User ID         : dhn
-[2019-05-22 21:51:19:6327][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$16c3d987 - USer Password   : dhn7985!!22qa
-[2019-05-22 21:51:20:6863][main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
-[2019-05-22 21:51:20:6960][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Started DhnAgentApplication in 6.711 seconds (JVM running for 7.124)
-[2019-05-22 21:51:21:7961][taskScheduler-4] INFO  com.dhn.DhnAgent.CronTable - 시작 시 Log Table 확인 
-[2019-05-22 21:51:21:7974][taskScheduler-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-[2019-05-22 21:51:21:8069][taskScheduler-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-[2019-05-22 21:53:53:394][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 7312 (E:\Git\DhnAgent\DhnAgent\bin\main started by WE in E:\Git\DhnAgent\DhnAgent)
-[2019-05-22 21:53:53:395][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
-[2019-05-22 21:53:54:672][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-[2019-05-22 21:53:54:687][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-[2019-05-22 21:53:54:976][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2019-05-22 21:53:54:1190][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2019-05-22 21:53:54:1226][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+[2019-05-23 19:20:15:1389][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+[2019-05-23 19:20:15:1399][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[2019-05-23 19:20:15:1507][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-05-23 19:20:15:1618][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-05-23 19:20:36:415][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 9652 (C:\Users\WE\git\DhnAgent\DhnAgent\bin\main started by WE in C:\Users\WE\git\DhnAgent\DhnAgent)
+[2019-05-23 19:20:36:417][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
+[2019-05-23 19:20:36:709][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-05-23 19:20:36:734][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+[2019-05-23 19:20:37:1031][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2019-05-23 19:20:37:1287][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2019-05-23 19:20:37:1323][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-[2019-05-22 21:53:54:1268][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
-[2019-05-22 21:53:54:1269][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-[2019-05-22 21:53:54:1367][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-[2019-05-22 21:53:55:1523][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-[2019-05-22 21:53:59:5689][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - PWD : E:\Git\DhnAgent\DhnAgent/conf/dbconf.properties
-[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - URL  : jdbc:mysql://222.122.203.68:3306/dhn?characterEncoding=UTF-8&serverTimezone=UTC
-[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - User : root
-[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - PW   : sjk4556!!22
-[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - User ID         : dhn
-[2019-05-22 21:53:59:5694][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7db45bbf - USer Password   : dhn7985!!22qa
-[2019-05-22 21:53:59:6122][main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
-[2019-05-22 21:53:59:6210][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Started DhnAgentApplication in 6.003 seconds (JVM running for 6.362)
-[2019-05-22 21:54:00:7210][taskScheduler-4] INFO  com.dhn.DhnAgent.CronTable - 시작 시 Log Table 확인 
-[2019-05-22 21:54:00:7226][taskScheduler-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-[2019-05-22 21:54:00:7319][taskScheduler-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[2019-05-23 19:20:37:1369][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+[2019-05-23 19:20:37:1370][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[2019-05-23 19:20:37:1477][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-05-23 19:20:37:1643][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-05-23 19:20:41:5911][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-05-23 19:20:41:5917][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7a81b1a7 - PWD : C:\Users\WE\git\DhnAgent\DhnAgent/conf/dbconf.properties
+[2019-05-23 19:20:41:5917][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7a81b1a7 - URL  : jdbc:oracle:thin:@//222.122.203.68:1521/xe
+[2019-05-23 19:20:41:5917][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7a81b1a7 - User : sys
+[2019-05-23 19:20:41:5917][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7a81b1a7 - PW   : sjk4556!!22
+[2019-05-23 19:20:41:5917][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7a81b1a7 - User ID         : dhn
+[2019-05-23 19:20:41:5917][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$7a81b1a7 - USer Password   : dhn7985!!22qa
+[2019-05-23 19:20:42:6370][main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+[2019-05-23 19:20:42:6460][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Started DhnAgentApplication in 6.244 seconds (JVM running for 6.614)
+[2019-05-23 19:20:43:7458][taskScheduler-1] INFO  com.dhn.DhnAgent.CronTable - 시작 시 Log Table 확인 
+[2019-05-23 19:20:43:7473][taskScheduler-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-23 19:20:44:8839][taskScheduler-3] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Exception during pool initialization.
+java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1018)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:501)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:437)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:954)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:639)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.dhn.DhnAgent.UserMsgReceive.ReceiveMsg(UserMsgReceive.java:50)
+	at com.dhn.DhnAgent.UserMsgReceive$$FastClassBySpringCGLIB$$5bfb3f6f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.dhn.DhnAgent.UserMsgReceive$$EnhancerBySpringCGLIB$$db18aff2.ReceiveMsg(<generated>)
+	at com.dhn.DhnAgent.CronTable.MsgReceiveJob(CronTable.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-05-23 19:20:44:8841][taskScheduler-3] ERROR com.dhn.DhnAgent.UserMsgReceive - java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+[2019-05-23 19:20:44:8841][taskScheduler-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-23 19:21:34:415][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 3208 (C:\Users\WE\git\DhnAgent\DhnAgent\bin\main started by WE in C:\Users\WE\git\DhnAgent\DhnAgent)
+[2019-05-23 19:21:34:417][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
+[2019-05-23 19:21:35:707][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-05-23 19:21:35:724][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+[2019-05-23 19:21:35:1024][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2019-05-23 19:21:35:1275][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2019-05-23 19:21:35:1314][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-05-23 19:21:35:1362][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+[2019-05-23 19:21:35:1363][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[2019-05-23 19:21:36:1470][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-05-23 19:21:36:1575][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-05-23 19:21:40:5786][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-05-23 19:21:40:5792][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$3381837d - PWD : C:\Users\WE\git\DhnAgent\DhnAgent/conf/dbconf.properties
+[2019-05-23 19:21:40:5793][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$3381837d - URL  : jdbc:oracle:thin:@//222.122.203.68:1521/xe
+[2019-05-23 19:21:40:5793][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$3381837d - User : sys
+[2019-05-23 19:21:40:5793][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$3381837d - PW   : sjk4556!!22
+[2019-05-23 19:21:40:5793][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$3381837d - User ID         : dhn
+[2019-05-23 19:21:40:5793][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$3381837d - USer Password   : dhn7985!!22qa
+[2019-05-23 19:21:40:6193][main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+[2019-05-23 19:21:40:6280][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Started DhnAgentApplication in 6.065 seconds (JVM running for 6.433)
+[2019-05-23 19:21:41:7280][taskScheduler-1] INFO  com.dhn.DhnAgent.CronTable - 시작 시 Log Table 확인 
+[2019-05-23 19:21:41:7288][taskScheduler-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-23 19:21:43:8557][taskScheduler-3] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Exception during pool initialization.
+java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1018)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:501)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:437)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:954)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:639)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.dhn.DhnAgent.UserMsgUpdate.MsgUpdate(UserMsgUpdate.java:44)
+	at com.dhn.DhnAgent.UserMsgUpdate$$FastClassBySpringCGLIB$$1935aabd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.dhn.DhnAgent.UserMsgUpdate$$EnhancerBySpringCGLIB$$c5677174.MsgUpdate(<generated>)
+	at com.dhn.DhnAgent.CronTable.MsgUpdateJob(CronTable.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-05-23 19:21:43:8558][taskScheduler-3] ERROR com.dhn.DhnAgent.UserMsgUpdate - java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+[2019-05-23 19:21:43:8558][taskScheduler-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-23 19:21:44:9683][taskScheduler-2] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Exception during pool initialization.
+java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1018)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:501)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:437)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:954)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:639)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.dhn.DhnAgent.UserMsgReceive.ReceiveMsg(UserMsgReceive.java:50)
+	at com.dhn.DhnAgent.UserMsgReceive$$FastClassBySpringCGLIB$$5bfb3f6f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.dhn.DhnAgent.UserMsgReceive$$EnhancerBySpringCGLIB$$7df9aeca.ReceiveMsg(<generated>)
+	at com.dhn.DhnAgent.CronTable.MsgReceiveJob(CronTable.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-05-23 19:21:44:9683][taskScheduler-2] ERROR com.dhn.DhnAgent.UserMsgReceive - java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+[2019-05-23 19:21:44:9683][taskScheduler-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-23 19:21:45:10808][taskScheduler-1] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Exception during pool initialization.
+java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1018)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:501)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:437)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:954)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:639)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.dhn.DhnAgent.CheckLogTable.CreateLogTable(CheckLogTable.java:35)
+	at com.dhn.DhnAgent.CheckLogTable$$FastClassBySpringCGLIB$$23ceb0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.dhn.DhnAgent.CheckLogTable$$EnhancerBySpringCGLIB$$1f426d2d.CreateLogTable(<generated>)
+	at com.dhn.DhnAgent.CronTable.StartCheckLogTable(CronTable.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-05-23 19:21:45:10809][taskScheduler-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-23 19:21:46:11934][taskScheduler-4] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Exception during pool initialization.
+java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1018)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:501)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:437)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:954)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:639)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.dhn.DhnAgent.UserMsgSent.SentMsg(UserMsgSent.java:42)
+	at com.dhn.DhnAgent.UserMsgSent$$FastClassBySpringCGLIB$$8a472e8c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.dhn.DhnAgent.UserMsgSent$$EnhancerBySpringCGLIB$$3ce95641.SentMsg(<generated>)
+	at com.dhn.DhnAgent.CronTable.MsgSentJob(CronTable.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-05-23 19:21:46:11935][taskScheduler-4] ERROR com.dhn.DhnAgent.UserMsgSent - java.sql.SQLException: ORA-28009: SYS(SYSDBA 또는 SYSOPER)로 접속해야 합니다.
+
+[2019-05-23 19:21:47:12685][taskScheduler-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2019-05-23 19:21:59:411][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Starting DhnAgentApplication on DESKTOP-NH93HRS with PID 11464 (C:\Users\WE\git\DhnAgent\DhnAgent\bin\main started by WE in C:\Users\WE\git\DhnAgent\DhnAgent)
+[2019-05-23 19:21:59:413][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - No active profile set, falling back to default profiles: default
+[2019-05-23 19:21:59:699][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-05-23 19:21:59:722][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+[2019-05-23 19:21:59:1014][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2019-05-23 19:21:59:1283][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2019-05-23 19:22:00:1330][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-05-23 19:22:00:1376][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+[2019-05-23 19:22:00:1377][main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[2019-05-23 19:22:00:1484][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-05-23 19:22:00:1650][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-05-23 19:22:04:5908][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-05-23 19:22:04:5914][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$4c43d79e - PWD : C:\Users\WE\git\DhnAgent\DhnAgent/conf/dbconf.properties
+[2019-05-23 19:22:04:5914][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$4c43d79e - URL  : jdbc:oracle:thin:@//222.122.203.68:1521/xe
+[2019-05-23 19:22:04:5914][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$4c43d79e - User : sys
+[2019-05-23 19:22:04:5914][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$4c43d79e - PW   : sjk4556!!22
+[2019-05-23 19:22:04:5915][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$4c43d79e - User ID         : dhn
+[2019-05-23 19:22:04:5915][main] INFO  c.d.D.DataSourceProperties$$EnhancerBySpringCGLIB$$4c43d79e - USer Password   : dhn7985!!22qa
+[2019-05-23 19:22:05:6307][main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+[2019-05-23 19:22:05:6397][main] INFO  c.dhn.DhnAgent.DhnAgentApplication - Started DhnAgentApplication in 6.184 seconds (JVM running for 6.55)

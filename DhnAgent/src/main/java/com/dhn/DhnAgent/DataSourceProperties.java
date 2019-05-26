@@ -44,11 +44,12 @@ public class DataSourceProperties {
 
     static boolean isStart = false;
     Logger log = LoggerFactory.getLogger(getClass());
+	//UserInfo userInfo = new UserInfo();
 	
 	@Bean(name="dhnds")
 	@Qualifier("dhnds")
 	@Primary
-	@ConfigurationProperties(prefix="dhn.datasource")
+	//@ConfigurationProperties(prefix="dhn.datasource")
 	public DataSource dhnDataSource() {
 		HikariDataSource hds = new HikariDataSource();
 		hds.setJdbcUrl("jdbc:mysql://218.38.52.87:3306/dhn?characterEncoding=UTF-8&serverTimezone=UTC");
@@ -61,7 +62,7 @@ public class DataSourceProperties {
 	
 	@Bean(name="userds")
 	@Qualifier("userds")
-	@ConfigurationProperties(prefix="user.datasource")
+	//@ConfigurationProperties(prefix="user.datasource")
 	public DataSource userDataSource() {
 		
 		HikariDataSource hds = new HikariDataSource();
@@ -70,7 +71,7 @@ public class DataSourceProperties {
 		try {
 			current = new java.io.File( "." ).getCanonicalPath();
 			current = current + "/conf/dbconf.properties";
-			log.info("PWD : " + current);
+			//log.info("PWD : " + current);
 
 			Properties p = new Properties();
 			p.load(new FileInputStream(current));
@@ -84,13 +85,17 @@ public class DataSourceProperties {
 			hds.setPassword(p.getProperty("PASSWORD"));
 			hds.setMaximumPoolSize(10);
 			hds.setAutoCommit(true);
+
+			DbInfo.DBMS = p.getProperty("DBMS");
+			DbInfo.SID = p.getProperty("SID");
+			DbInfo.MSG_TABLE = p.getProperty("MSG_TABLE");
+			DbInfo.BROADCAST_TABLE = p.getProperty("BROADCAST_TABLE");
 			
 			DataSourceProperties.isStart = true;
 			
 
 			log.info("User ID         : " + p.getProperty("LOGIN_ID"));
 			log.info("USer Password   : " + p.getProperty("LOGIN_PW"));
-
 			
 			String res = check_login(p.getProperty("LOGIN_ID"), p.getProperty("LOGIN_PW"));
 			Gson gson = new Gson();

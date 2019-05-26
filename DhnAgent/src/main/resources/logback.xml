@@ -25,6 +25,6 @@
     <logger name="com.parfait.study.simplelogging.service.SomeService" level="INFO"/>
 
     <root level="info">
-        <appender-ref ref="ROLLING"/>
+        <appender-ref ref="STDOUT"/>
     </root>
 </configuration>

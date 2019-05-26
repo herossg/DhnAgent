@@ -37,18 +37,18 @@ public class UserMsgUpdate {
 		
 		if(!isRunning) {
 			isRunning = true;
-			String userTblName = "cb_dhn_broadcast_" + monthStr;
+			String userTblName = DbInfo.BROADCAST_TABLE + monthStr;
 			Connection userCon = null;
 			
 			try {
 				userCon = userSource.getConnection();
 
-				String userQuery = "select * from cb_dhn_msg dm where dm.MSG_CNT = (select count(1) from " + userTblName + " db where db.MSG_ID = dm.DHN_MSG_ID)";
+				String userQuery = "select * from " + DbInfo.MSG_TABLE + " dm where dm.MSG_CNT = (select count(1) from " + userTblName + " db where db.MSG_ID = dm.DHN_MSG_ID)";
 				Statement stm = userCon.createStatement();
 				ResultSet rs = stm.executeQuery(userQuery);
 				
 				
-				String updateQuery = "update cb_dhn_msg set msg_st = 3 where msg_id = ?";
+				String updateQuery = "update " + DbInfo.MSG_TABLE + " set msg_st = 3 where msg_id = ?";
 				
 				while(rs.next()) {
 					PreparedStatement userUpdate = userCon.prepareStatement(updateQuery);
