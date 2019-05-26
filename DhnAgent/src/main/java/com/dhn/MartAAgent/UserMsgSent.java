@@ -1,4 +1,4 @@
-package com.dhn.DhnAgent;
+package com.dhn.MartAAgent;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -33,7 +33,7 @@ public class UserMsgSent {
 		Logger log = LoggerFactory.getLogger(getClass());
 
 		if(!isRunning) {
-			//log.info("Message Sent Start!!");
+			log.info("Message Sent Start!!");
 			isRunning = true;
 			int totalsent = 0;
 			Connection userCon = null;
@@ -51,6 +51,8 @@ public class UserMsgSent {
 				if(DbInfo.DBMS.toUpperCase().equals("ORACLE")) {
 					userQuery = "select * from " + DbInfo.MSG_TABLE + " where msg_st = 0 and dhn_msg_id is null and rownum <= 50";
 				}
+				
+				//log.info("Message Sent Query : " + userQuery + " ( " + DbInfo.DBMS.toUpperCase() + " )");
 				
 				Statement stm = userCon.createStatement();
 				ResultSet rs = stm.executeQuery(userQuery);
@@ -80,8 +82,13 @@ public class UserMsgSent {
 															" , ?)";
 				
 				String updateQuery = "update " + DbInfo.MSG_TABLE + " set dhn_msg_id = ?, msg_st = 2, msg_cnt = ? where msg_id = ?";
-				
+				//rs.first();
+				//rs.next();
+				//log.info("MsG TEXT", rs.getString("TEXT"));
+
 				while(rs.next()) {
+					log.info("MsG TEXT", rs.getString("TEXT"));
+					
 					PreparedStatement dhnIns = dhnCon.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
 					dhnIns.setString(1, rs.getString("MSG_GB"));
 					dhnIns.setString(2, rs.getString("MSG_ST"));
@@ -95,7 +102,7 @@ public class UserMsgSent {
 					dhnIns.setString(10, rs.getString("FILE_PATH2"));
 					dhnIns.setString(11, rs.getString("FILE_PATH3"));
 					int rowAffected = dhnIns.executeUpdate();
-
+					
 		            if(rowAffected == 1)
 		            {
 		                // get candidate id
@@ -118,14 +125,19 @@ public class UserMsgSent {
 		                	dhnmapins.close();
 		                	
 		                }
+		            } else {
+		            	
 		            }
 		            dhnIns.close();
 		            totalsent++;
 				}
-					
+
+				//log.info("RS SIZE : " + rs.getr);
+				
 			} catch (SQLException e) {
 				log.error(e.toString());
 			}
+
 			if(totalsent > 0)
 				log.info("" + totalsent + " Message Sent !!");
 			

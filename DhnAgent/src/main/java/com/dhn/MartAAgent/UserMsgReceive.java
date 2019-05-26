@@ -1,4 +1,4 @@
-package com.dhn.DhnAgent;
+package com.dhn.MartAAgent;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -65,7 +65,7 @@ public class UserMsgReceive {
 				
 				while(rs.next()) {
 
-					String dhnQuery = "select * from " + dhnTblName + " where bc_snd_st in ('3', '4') and msg_id in (" + rs.getString("msg_ids") + ")";
+					String dhnQuery = "select * from " + dhnTblName + " where bc_snd_st in ('3', '4', '5', '6') and msg_id in (" + rs.getString("msg_ids") + ")";
 					//log.info(dhnQuery);
 					Statement dhnstm = dhnCon.createStatement();
 					ResultSet dhnrs = dhnstm.executeQuery(dhnQuery);
@@ -97,6 +97,7 @@ public class UserMsgReceive {
 					
 					while(dhnrs.next()) {
 						try {
+							log.info(" DHN : " + dhnrs.getString(1));
 							PreparedStatement userIns = userCon.prepareStatement(userResultInsert);
 							userIns.setString(1, dhnrs.getString(1));
 							userIns.setString(2, dhnrs.getString(2));
@@ -111,6 +112,7 @@ public class UserMsgReceive {
 							userIns.executeUpdate();
 							userIns.close();
 						} catch(SQLException ex) {
+							log.info(ex.toString());
 							PreparedStatement userUpdate = userCon.prepareStatement(userResultUpdate);
 							userUpdate.setString(1, dhnrs.getString("BC_RSLT_NO"));
 							userUpdate.setString(2, dhnrs.getString("BC_RSLT_TEXT"));

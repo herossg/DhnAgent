@@ -1,4 +1,4 @@
-package com.dhn.DhnAgent;
+package com.dhn.MartAAgent;
 
 public class UserInfo {
 	public String user_name = "";

@@ -1,4 +1,4 @@
-package com.dhn.DhnAgent;
+package com.dhn.MartAAgent;
 
 import javax.sql.DataSource;
 
@@ -15,11 +15,11 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
 @SpringBootApplication
 @EnableScheduling
-public class DhnAgentApplication {
+public class MartAAgentApplication {
 	
 	public static void main(String[] args) {
 		
-		ApplicationContext ctx = SpringApplication.run(DhnAgentApplication.class, args);
+		ApplicationContext ctx = SpringApplication.run(MartAAgentApplication.class, args);
 	}
  
 	@Bean
