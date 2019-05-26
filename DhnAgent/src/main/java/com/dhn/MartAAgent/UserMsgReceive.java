@@ -36,8 +36,8 @@ public class UserMsgReceive {
 		
 		String monthStr = _monthStr; 
 		
-		if(!isRunning) {
-			isRunning = true;
+		if(!UserMsgReceive.isRunning) {
+			UserMsgReceive.isRunning = true;
 			int totalreceive = 0;
 
 			String dhnTblName = "cb_grs_broadcast_" + monthStr;
@@ -57,7 +57,7 @@ public class UserMsgReceive {
 				}
 				
 				if(DbInfo.DBMS.toUpperCase().equals("ORACLE")) {
-					userQuery = "select (msg_id / 10) as part, SUBSTR(XMLAgg(XMLElement(x, ',', dhn_msg_id)).Extract('//text()'), 2) as msg_ids from " + DbInfo.MSG_TABLE + " where msg_st = '2' and dhn_msg_id is not null group by (msg_id / 10)";
+					userQuery = "select trunc(msg_id / 10) as part, SUBSTR(XMLAgg(XMLElement(x, ',', dhn_msg_id)).Extract('//text()'), 2) as msg_ids from " + DbInfo.MSG_TABLE + " where msg_st = '2' and dhn_msg_id is not null group by trunc(msg_id / 10)";
 				}
 				Statement stm = userCon.createStatement();
 				
@@ -97,7 +97,7 @@ public class UserMsgReceive {
 					
 					while(dhnrs.next()) {
 						try {
-							log.info(" DHN : " + dhnrs.getString(1));
+							//log.info(" DHN : " + dhnrs.getString(1));
 							PreparedStatement userIns = userCon.prepareStatement(userResultInsert);
 							userIns.setString(1, dhnrs.getString(1));
 							userIns.setString(2, dhnrs.getString(2));
@@ -112,7 +112,7 @@ public class UserMsgReceive {
 							userIns.executeUpdate();
 							userIns.close();
 						} catch(SQLException ex) {
-							log.info(ex.toString());
+							//log.info(ex.toString());
 							PreparedStatement userUpdate = userCon.prepareStatement(userResultUpdate);
 							userUpdate.setString(1, dhnrs.getString("BC_RSLT_NO"));
 							userUpdate.setString(2, dhnrs.getString("BC_RSLT_TEXT"));
@@ -163,7 +163,7 @@ public class UserMsgReceive {
 				e.printStackTrace();
 			}
 			
-			isRunning = false;
+			UserMsgReceive.isRunning = false;
 		}
 	}
 }

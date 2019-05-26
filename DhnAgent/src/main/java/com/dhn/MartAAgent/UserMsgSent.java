@@ -32,9 +32,9 @@ public class UserMsgSent {
 		
 		Logger log = LoggerFactory.getLogger(getClass());
 
-		if(!isRunning) {
-			log.info("Message Sent Start!!");
-			isRunning = true;
+		if(!UserMsgSent.isRunning) {
+			//log.info("Message Sent Start!!");
+			UserMsgSent.isRunning = true;
 			int totalsent = 0;
 			Connection userCon = null;
 			Connection dhnCon = null;
@@ -87,7 +87,7 @@ public class UserMsgSent {
 				//log.info("MsG TEXT", rs.getString("TEXT"));
 
 				while(rs.next()) {
-					log.info("MsG TEXT", rs.getString("TEXT"));
+					//log.info("MsG TEXT", rs.getString("TEXT"));
 					
 					PreparedStatement dhnIns = dhnCon.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
 					dhnIns.setString(1, rs.getString("MSG_GB"));
@@ -157,7 +157,7 @@ public class UserMsgSent {
 				e.printStackTrace();
 			}
 			
-			isRunning = false;
+			UserMsgSent.isRunning = false;
 		}
 	}
 	

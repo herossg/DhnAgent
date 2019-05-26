@@ -35,15 +35,15 @@ public class UserMsgUpdate {
 		String monthStr = _monthStr; 
 		int totalud = 0;
 		
-		if(!isRunning) {
-			isRunning = true;
+		if(!UserMsgUpdate.isRunning) {
+			UserMsgUpdate.isRunning = true;
 			String userTblName = DbInfo.BROADCAST_TABLE + monthStr;
 			Connection userCon = null;
 			
 			try {
 				userCon = userSource.getConnection();
 
-				String userQuery = "select * from " + DbInfo.MSG_TABLE + " dm where dm.MSG_CNT = (select count(1) from " + userTblName + " db where db.MSG_ID = dm.DHN_MSG_ID)";
+				String userQuery = "select * from " + DbInfo.MSG_TABLE + " dm where dm.MSG_CNT = (select count(1) from " + userTblName + " db where db.MSG_ID = dm.DHN_MSG_ID) and dm.msg_st <> '3'";
 				Statement stm = userCon.createStatement();
 				ResultSet rs = stm.executeQuery(userQuery);
 				
@@ -62,6 +62,8 @@ public class UserMsgUpdate {
 				log.error(e.toString());
 			}
 			
+			//if(totalud > 0)
+			//	log.info("" + totalud + " Message Updated !!");
 			
 			try {
 				if(userCon != null)
@@ -71,7 +73,7 @@ public class UserMsgUpdate {
 				e.printStackTrace();
 			}
 			
-			isRunning = false;
+			UserMsgUpdate.isRunning = false;
 		}
 	}
 }
